@@ -7,5 +7,5 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss(),
   ],
-  base: "/react-todo/"
+  base: "/react-todo"
 })
