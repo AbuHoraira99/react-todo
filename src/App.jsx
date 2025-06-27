@@ -88,7 +88,7 @@ function App() {
   return (
     <>
     <Navbar/>
-      <div className="md:container mx-5 md:mx-auto rounded-xl min-h-[80vh] md:w-1/2 bg-violet-100 my-5 p-5">
+      <div className="sm:container mx-5 sm:mx-auto rounded-xl min-h-[80vh] sm:w-1/2 bg-violet-100 my-5 p-5">
       <h1 className='font-bold text-center text-3xl my-4'>iTask - Manage your todos at one place</h1>
         <div className="add-todo">
           <h2 className='font-bold text-lg'>Add Your Todo</h2>
@@ -102,7 +102,7 @@ function App() {
         <h2 className='text-lg font-bold'>Your Todo</h2>
         <div className="todos">
           {todos.length === 0 && (<div className='m-3 font-bold'>NO todos to display</div>) }
-          {todos.map(item=>{ return (showFinish || !item.isCompleted) && <div key={item.id} className="todo flex md:w-3/4 justify-between">
+          {todos.map(item=>{ return (showFinish || !item.isCompleted) && <div key={item.id} className="todo flex sm:w-3/4 justify-between">
             <div className='flex items-center'>
             <input onChange={handleChackBox} type="checkbox" checked={item.isCompleted} className='mr-3' name={item.id} id="" />
             <div className={item.isCompleted?"line-through": ""}>{item.todo}</div>
